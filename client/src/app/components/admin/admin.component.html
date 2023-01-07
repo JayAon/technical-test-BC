@@ -1,0 +1,100 @@
+<div class="card-container mx-auto">
+  <div class="card border-0 shadow-none">
+    <div class="card-body">
+      <mdb-tabs id="tabs" (activeTabChange)="onGetActiveTab($event)">
+        <mdb-tab title="Paises">
+          <ng-template mdbTabContent>
+            <div class="d-flex flex-column align-items-center">
+              <select
+                #country
+                id="country"
+                (change)="onSelect(country.value)"
+                class="select-text custom-select w-25 border-0 border-bottom mt-2 mb-2 text-center"
+              >
+                <option
+                  *ngFor="let country of select_data[0]"
+                  [value]="country.id"
+                >
+                  {{ country.name }}
+                </option>
+              </select>
+              <div
+                class="d-flex w-100 justify-content-start border-bottom mb-3"
+              >
+                <span
+                  i18n="@@AvailableUserCryptoList-Admin"
+                  class="item-text modal-title float-right mt-2 mb-2"
+                  >Listar monedas disponibles</span
+                >
+              </div>
+              <app-crypto-list
+                [listCrypto]="thisList"
+                class="table"
+              ></app-crypto-list>
+            </div>
+          </ng-template>
+        </mdb-tab>
+        <mdb-tab title="Gestoras">
+          <ng-template mdbTabContent>
+            <div class="d-flex flex-column align-items-center">
+              <select
+                #manager
+                (change)="onSelect(manager.value)"
+                class="select-text custom-select w-25 border-0 border-bottom mt-2 mb-2 text-center"
+              >
+                <option
+                  *ngFor="let manager of select_data[1]"
+                  [value]="manager.id"
+                >
+                  {{ manager.name }}
+                </option>
+              </select>
+              <div
+                class="d-flex w-100 justify-content-start border-bottom mb-3"
+              >
+                <span
+                  i18n="@@AvailableUserCryptoList-Admin"
+                  class="item-text modal-title float-right mt-2 mb-2"
+                  >Listar monedas disponibles</span
+                >
+              </div>
+              <app-crypto-list
+                [listCrypto]="thisList"
+                class="table"
+              ></app-crypto-list>
+            </div>
+          </ng-template>
+        </mdb-tab>
+        <mdb-tab title="Usuarios">
+          <ng-template mdbTabContent>
+            <div class="d-flex flex-column align-items-center">
+              <select
+                #user
+                (change)="onSelect(user.value)"
+                class="select-text custom-select w-25 border-0 border-bottom mt-2 mb-2 text-center"
+              >
+                <option *ngFor="let user of select_data[2]" [value]="user.id">
+                  {{ user.name }}
+                </option>
+              </select>
+              <div
+                class="d-flex w-100 justify-content-start border-bottom mb-3"
+              >
+                <span
+                  i18n="@@AvailableUserCryptoList-Admin"
+                  class="item-text modal-title float-right mt-2 mb-2"
+                  >Listar monedas disponibles</span
+                >
+              </div>
+
+              <app-crypto-list
+                [listCrypto]="thisList"
+                class="table"
+              ></app-crypto-list>
+            </div>
+          </ng-template>
+        </mdb-tab>
+      </mdb-tabs>
+    </div>
+  </div>
+</div>

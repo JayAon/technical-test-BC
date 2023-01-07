@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+@import "styles/vars";
+
+.title {
+  font-family: $title-font, sans-serif;
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
+  line-height: $title-line-height;
+}
+.item-text {
+  font-family: $item-font, sans-serif;
+  font-size: $item-font-size;
+  font-weight: $item-font-weight;
+  line-height: $item-font-line-height;
+}
+.select-text {
+  font-family: $select-font, sans-serif;
+  font-size: $select-font-size;
+  font-weight: $select-font-weight;
+  line-height: $select-font-line-height;
+}
+input {
+  font-family: $item-font, sans-serif;
+  font-size: $item-font-size;
+  font-weight: $item-font-weight;
+  line-height: $item-font-line-height;
+}
+button {
+  background-color: $button-color;
+  font-family: $button-font;
+  font-style: $button-font-style;
+  font-weight: $button-font-weight;
+  font-size: $button-font-size;
+  line-height: $button-font-line-height;
+}

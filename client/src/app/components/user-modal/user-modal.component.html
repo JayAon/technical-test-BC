@@ -1,0 +1,46 @@
+<div class="modal-header border-0">
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="modalRef.close()"
+  ></button>
+</div>
+<div class="modal-body d-flex align-items-center">
+  <div class="modal-container mx-auto">
+    <span i18n="@@AvailableUserCryptoList-Header" class="item-text modal-title"
+      >Listado de monedas</span
+    >
+    <form class="input-group mb-3 w-100">
+      <select
+        id="selectedcrypto"
+        #selectedcrypto
+        (change)="onSelected(selectedcrypto.value)"
+        class="select-text custom-select w-100 border-0 border-bottom mt-5 mb-5"
+      >
+        <option *ngFor="let crypto of countryCrypto" [value]="crypto.id">
+          {{ crypto.symbol }}
+        </option>
+      </select>
+    </form>
+  </div>
+</div>
+<div class="modal-footer border-0 mt-5 mb-5 d-flex justify-content-center">
+  <button
+    i18n="@@AvailableUserCryptoList-Save"
+    type="button"
+    class="rounded-pill border-0"
+    (click)="saveSelected()"
+    id="saveButton"
+  >
+    Guardar
+  </button>
+  <button
+    i18n="@@AvailableUserCryptoList-Cancel"
+    type="button"
+    class="cancel rounded-pill"
+    (click)="modalRef.close()"
+  >
+    Cancelar
+  </button>
+</div>

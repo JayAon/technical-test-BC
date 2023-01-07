@@ -1,0 +1,29 @@
+<table class="table">
+  <thead class="thead-light mt-10">
+    <tr class="table-light tr-header text-center align-middle">
+      <th scope="col">#</th>
+      <th i18n="@@CryptoList-Symbol" scope="col">Simbolo</th>
+      <th i18n="@@CryptoList-Name" scope="col">Nombre</th>
+      <th i18n="@@CryptoList-ValueText" scope="col">Tasa de cambio</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody class="text-center align-middle">
+    <tr *ngFor="let crypto of listCrypto">
+      <th scope="row">{{ crypto.id }}</th>
+      <td>{{ crypto.symbol }}</td>
+      <td>{{ crypto.name }}</td>
+      <td>{{ crypto.value | currency: "USD" }}</td>
+      <td>
+        <i
+          (click)="editBtn(crypto.id)"
+          class="fa-sharp fa-solid fa-pen-to-square editBtn"
+        ></i>
+        <i
+          (click)="deleteBtn(crypto.id)"
+          class="fa-sharp fa-solid fa-trash-can deleteBtn"
+        ></i>
+      </td>
+    </tr>
+  </tbody>
+</table>

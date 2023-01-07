@@ -1,0 +1,28 @@
+<div class="card-container mx-auto">
+  <div class="card border-0 shadow-none">
+    <div
+      class="card-header d-flex align-items-center"
+      style="background-color: white"
+    >
+      <span i18n="@@UserCryptos-Header" class="title my-auto align-self-center"
+        >Mis Monedas</span
+      >
+      <button
+        i18n="@@UserCryptos-AddCryptoButton"
+        class="float-end rounded-pill border-0"
+        id="openBtn"
+        (click)="openModal()"
+      >
+        AGREGAR MONEDA
+      </button>
+    </div>
+    <div class="card-body">
+      <app-crypto-list
+        (delete)="deleteButton($event.param1)"
+        (edit)="editButton($event.param1)"
+        [listCrypto]="thisList"
+        class="table"
+      ></app-crypto-list>
+    </div>
+  </div>
+</div>

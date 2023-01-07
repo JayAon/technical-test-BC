@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="CryptoList-Symbol" datatype="html">
+        <source>Simbolo</source>
+        <target>Symbol</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/crypto-list/crypto-list.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="CryptoList-Name" datatype="html">
+        <source>Nombre</source>
+        <target>Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/crypto-list/crypto-list.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="CryptoList-ValueText" datatype="html">
+        <source>Tasa de cambio</source>
+        <target>Currency</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/crypto-list/crypto-list.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LogIn-Header" datatype="html">
+        <source>Sign In</source>
+        <target>Sign In</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="LogIn-ButtonText" datatype="html">
+        <source> SIGN IN </source>
+        <target> SIGN IN </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">39,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AvailableUserCryptoList-Header" datatype="html">
+        <source>Listado de monedas</source>
+        <target>Available Cryptos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user-modal/user-modal.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AvailableUserCryptoList-Save" datatype="html">
+        <source> Guardar </source>
+        <target>Save</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user-modal/user-modal.component.html</context>
+          <context context-type="linenumber">30,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AvailableUserCryptoList-Cancel" datatype="html">
+        <source> Cancelar </source>
+        <target>Cancel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user-modal/user-modal.component.html</context>
+          <context context-type="linenumber">38,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="UserCryptos-Header" datatype="html">
+        <source>Mis Monedas</source>
+        <target>My Cryptos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="UserCryptos-AddCryptoButton" datatype="html">
+        <source> AGREGAR MONEDA </source>
+        <target>ADD CRYPTO</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user/user.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

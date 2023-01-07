@@ -1,0 +1,23 @@
+$input-border-color: #111;
+$box-shadow-alpha: 0.5;
+$card-width: 65%;
+$input-box-shadow-color: rgba($input-border-color, $box-shadow-alpha);
+.form-container {
+  width: 50%;
+}
+.form-control:focus {
+  border-color: $input-border-color;
+  box-shadow: 0px 15px 10px -15px $input-box-shadow-color;
+}
+.card-container {
+  width: 80%;
+}
+.card {
+  border-radius: 0 !important;
+  max-width: $card-width;
+  width: $card-width;
+}
+button {
+  width: 90px;
+  height: 38px;
+}
